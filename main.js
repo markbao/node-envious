@@ -14,9 +14,6 @@
 
 function envious () {
 
-  // defaults
-  this.environments = {};
-
   // apply the environment
   // [param] strict: usually, giving an invalid environment name
   //                 would fall back to default. make true to
