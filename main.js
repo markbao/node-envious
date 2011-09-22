@@ -30,7 +30,7 @@ function envious () {
       // no environment matched
       if (env && strict) {
         // env defined, but not matched
-        throw new Error('envious: couldn\'t find that environment');
+        throw new Error('envious: couldn\'t find environment `' + env + '`');
       } else {
         // env is undefined/empty
         if (!this.default) {
