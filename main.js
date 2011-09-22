@@ -18,14 +18,15 @@ function envious () {
   // [param] strict: usually, giving an invalid environment name
   //                 would fall back to default. make true to
   //                 throw an error for an invalid env instead.
-  this.apply = function(strict) {
+  this.apply = function(options) {
+    if (!options) options = {}
     env = process.env.NODE_ENV;
     if (this[env]) {
       // environment matched
       return this[env];
     } else {
       // no environment matched
-      if (env && strict) {
+      if (env && options.strict) {
         // env defined, but not matched
         throw new Error('envious: couldn\'t find environment `' + env + '`');
       } else {
