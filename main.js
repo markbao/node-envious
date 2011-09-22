@@ -15,8 +15,36 @@
 function envious () {
 
   // defaults
-  var environments = {};
+  this.environments = {};
 
+  // apply the environment
+  // [param] strict: usually, giving an invalid environment name
+  //                 would fall back to default. make true to
+  //                 throw an error for an invalid env instead.
+  this.apply = function(strict) {
+    env = process.env.NODE_ENV;
+    if (this[env]) {
+      // environment matched
+      return this[env];
+    } else {
+      // no environment matched
+      if (env && strict) {
+        // env defined, but not matched
+        throw new Error('envious: couldn\'t find that environment');
+      } else {
+        // env is undefined/empty
+        if (!this.default) {
+          throw new Error('no default environment found');
+        } else if (this.default && !this[this.default]) {
+          // default not found
+          throw new Error('envious: no configuration found for default environment');
+        } else if (this.default && this[this.default]) {
+          // return default
+          return this[this.default];
+        }
+      }
+    }
+  }
 }
 
 module.exports = new envious();
