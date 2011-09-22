@@ -17,13 +17,6 @@ function envious () {
   // defaults
   var environments = {};
 
-  // init function
-  this.init = function(environments) {
-    // save environments
-    this.environments = environments;
-  }
-
-  // 
 }
 
 module.exports = new envious();
