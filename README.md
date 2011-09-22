@@ -2,6 +2,10 @@
 
 envious makes it absurdly easy for you to configure your environment, so you can have a central place to define credentials and whatnot.
 
+## install
+
+    npm install envious
+
 ## textbook example
 
 put this in your pipe
