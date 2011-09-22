@@ -2,7 +2,7 @@
 
 envious makes it absurdly easy for you to configure your environment, so you can have a central place to define credentials and whatnot.
 
-## example
+## textbook example
 
 put this in your pipe
 
@@ -31,4 +31,3 @@ console.log(env.site_url);
 and smoke it
 
     NODE_ENV=production node app.js
-    => http://zombo.com/
