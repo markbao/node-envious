@@ -37,7 +37,7 @@ function envious () {
           throw new Error('no default environment found');
         } else if (this.default && !this[this.default]) {
           // default not found
-          throw new Error('envious: no configuration found for default environment');
+          throw new Error('envious: no configuration found for default environment `' + this.default + '`');
         } else if (this.default && this[this.default]) {
           // return default
           return this[this.default];
