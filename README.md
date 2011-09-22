@@ -1,4 +1,4 @@
-# envious: environment variables made easy, fun, and profitable
+# envious: environment variables made easy, fun, and finally profitable
 
 envious makes it absurdly easy for you to configure your environment, so you can have a central place to define credentials and whatnot.
 
