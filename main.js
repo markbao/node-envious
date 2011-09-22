@@ -30,14 +30,14 @@ function envious () {
         throw new Error('envious: couldn\'t find environment `' + env + '`');
       } else {
         // env is undefined/empty
-        if (!this.default) {
+        if (!this.default_env) {
           throw new Error('no default environment found');
-        } else if (this.default && !this[this.default]) {
+        } else if (this.default_env && !this[this.default_env]) {
           // default not found
-          throw new Error('envious: no configuration found for default environment `' + this.default + '`');
-        } else if (this.default && this[this.default]) {
+          throw new Error('envious: no configuration found for default environment `' + this.default_env + '`');
+        } else if (this.default_env && this[this.default_env]) {
           // return default
-          return this[this.default];
+          return this[this.default_env];
         }
       }
     }

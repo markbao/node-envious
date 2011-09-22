@@ -12,7 +12,7 @@ envious.production =
     "site_url": "http://zombo.com/",
 }
 
-envious.default = "development";
+envious.default_env = "development";
 
 var env = envious.apply();
 
