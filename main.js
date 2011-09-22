@@ -32,7 +32,7 @@ function envious () {
       } else {
         // env is undefined/empty
         if (!this.default_env) {
-          throw new Error('no default environment found');
+          throw new Error('envious: no default environment found');
         } else if (this.default_env && !this[this.default_env]) {
           // default not found
           throw new Error('envious: no configuration found for default environment `' + this.default_env + '`');
