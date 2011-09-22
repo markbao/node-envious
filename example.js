@@ -2,14 +2,14 @@ var envious = require('envious');
 
 envious.development = 
 {
-    "mongodb_hostname": "dev.local",
-    "site_url": "http://127.0.0.1/",
+  "mongodb_hostname": "dev.local",
+  "site_url": "http://127.0.0.1/",
 }
 
 envious.production = 
 {
-    "mongodb_hostname": "masterdb.sterlingcooper.com",
-    "site_url": "http://zombo.com/",
+  "mongodb_hostname": "masterdb.sterlingcooper.com",
+  "site_url": "http://zombo.com/",
 }
 
 envious.default_env = "development";
