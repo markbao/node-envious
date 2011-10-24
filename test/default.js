@@ -28,6 +28,9 @@ assert.doesNotThrow(function() { envious.apply() });
 console.log('test -- variable site_url should match that of the default set');
 assert.equal(env.site_url, 'http://127.0.0.1/');
 
+console.log('test -- testable against a string value matching environment name');
+assert.equal(env, 'development');
+
 console.log('test -- variable site_url should not match that of the production set');
 assert.notEqual(env.site_url, 'http://zombo.com/');
 
