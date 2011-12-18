@@ -8,7 +8,7 @@
   , "url" : "http://github.com/markbao/node-envious.git"
   }
 , "bugs" :
-  { "web" : "http://github.com/markbao/node-envious/issues" }
+  { "url" : "http://github.com/markbao/node-envious/issues" }
 , "engines" : ["node >= 0.3.6"]
 , "main" : "./main"
 }
