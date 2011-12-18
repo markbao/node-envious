@@ -45,4 +45,7 @@ assert.equal(env.session_secret, 'ssssshhhhh');
 console.log('test -- variable smtp.email should be that of the default set');
 assert.equal(env.smtp.email, 'noreply@sterlingcooper.com');
 
+console.log('test -- missing properties that are defined in default env should throw when strictProperties is true');
+assert.throws(function() { envious.apply({strictProperties: true}); });
+
 console.log('== all tests passed successfully');
