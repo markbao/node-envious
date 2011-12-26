@@ -1,14 +1,14 @@
-{ "name" : "envious"
-, "description" : "making environment configuration dead easy"
-, "tags" : ["config", "configuration", "env", "environment", "staging", "production", "util", "utility"]
-, "version" : "0.1.0"
-, "author" : "Mark Bao <mark@markbao.com>"
-, "repository" :
-  { "type" : "git"
-  , "url" : "http://github.com/markbao/node-envious.git"
-  }
-, "bugs" :
-  { "url" : "http://github.com/markbao/node-envious/issues" }
-, "engines" : ["node >= 0.3.6"]
-, "main" : "./main"
+{
+  "name": "envious",
+  "description": "making environment configuration dead easy",
+  "tags": ["config", "configuration", "env", "environment", "staging", "production", "util", "utility"],
+  "version": "0.2.0",
+  "author": "Mark Bao <mark@markbao.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/markbao/node-envious.git"
+  },
+  "bugs": { "url": "http://github.com/markbao/node-envious/issues" },
+  "engines": ["node >= 0.3.6"],
+  "main": "./main"
 }
