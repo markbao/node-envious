@@ -38,11 +38,17 @@ and smoke it
 
 ## options
 
-`strict`: strict environment checking
+### `strict`: strict environment checking
 
     var env = envious.apply({strict: true});
 
-when strict is on, it will throw an error if the environment does not exist. normally, it would simply fall back to the default.
+When strict is on, it will throw an error if the environment does not exist. normally, it would simply fall back to the default.
+
+### `strictProperties`: if the current environment is missing properties that the default environment has, throw an error.
+
+    var env = envious.apply({strictProperties: true});
+
+By default, properties not defined in the current environment will be copied from the default environment.
 
 ## tests
 
