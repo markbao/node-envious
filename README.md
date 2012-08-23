@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/markbao/node-envious.png)](http://travis-ci.org/markbao/node-envious)
 # envious: environment variables made easy, fun, and finally profitable
 
 envious makes it absurdly easy for you to configure your environment, so you can have a central place to define credentials and whatnot.
